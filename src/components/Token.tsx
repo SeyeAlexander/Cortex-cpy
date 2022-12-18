@@ -20,7 +20,15 @@ import icon4 from "../assets/three-crv.5ffb8695.svg";
 const Token = () => {
   return (
     <Container maxW='6xl' mt='200px'>
-      <Flex w='full' bg='#191F2D' h='620px' borderRadius='30px' px='70px' color='white'>
+      <Flex
+        w='full'
+        bg='#191F2D'
+        bgImage='linear-gradient(90deg, #191f2d 0%, #363f53 64%)'
+        h='620px'
+        borderRadius='30px'
+        px='70px'
+        color='white'
+      >
         <VStack w='52%' align='flex-start' pt='50px' pr='60px'>
           <Image src={logo} w='80px' />
           <HStack>

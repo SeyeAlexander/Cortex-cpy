@@ -1,9 +1,10 @@
 import { Container, Box, Flex, VStack, HStack, Text, Button, Image } from "@chakra-ui/react";
 import logo from "../assets/cortex-logo2.svg";
+import icon1 from "../assets/icon1.svg";
 
 const Trade = () => {
   return (
-    <Container maxW='6xl' mt='40px' pb='100px'>
+    <Container maxW='6xl' mt='40px'>
       {/* bg='#191F2D' */}
       <Flex gap='130px' justify='center'>
         <HStack w='40%' justify='space-between'>
@@ -72,7 +73,7 @@ const Trade = () => {
             </HStack>
 
             <HStack align='flex-start'>
-              <Image src={logo} w='40px' />
+              <Image src={icon1} w='40px' />
               <VStack align='flex-start' spacing='-5px'>
                 <Text fontFamily='Aeonik Bold' fontSize='33px'>
                   10.60

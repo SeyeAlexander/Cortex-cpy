@@ -30,6 +30,9 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* background-color: #e1e1e1;
+background-image: linear-gradient(62deg, #e1e1e1 0%, #ececec 100%); */
+
 #iconlap {
   position: relative;
   margin-left: -5px;
