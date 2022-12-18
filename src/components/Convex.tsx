@@ -13,7 +13,6 @@ import icon10 from "../assets/three-crv.5ffb8695.svg";
 const Convex = () => {
   return (
     <Container maxW='6xl' mt='70px'>
-      {/* bg='#191F2D' */}
       <Flex justify='center' gap='40px'>
         <VStack align='flex-start' w='45%' h='300px' pt='50px'>
           <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='45px'>

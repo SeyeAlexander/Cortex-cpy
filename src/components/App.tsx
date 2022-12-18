@@ -5,6 +5,7 @@ import Herosection from "./Herosection";
 import Navbar from "./Navbar";
 import Protocol from "./Protocol";
 import Token from "./Token";
+import Trade from "./Trade";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Token />
       <Earn />
       <Convex />
+      <Trade />
     </Box>
   );
 };

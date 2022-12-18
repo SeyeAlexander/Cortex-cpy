@@ -41,7 +41,6 @@ const Token = () => {
             borderRadius='10px'
             h='60px'
             fontSize='16px'
-            fontWeight='bold'
           >
             Learn more
           </Button>

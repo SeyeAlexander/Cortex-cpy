@@ -67,6 +67,7 @@ const Earn = () => {
               borderRadius='20px'
               h='55px'
               fontSize='21px'
+              fontWeight='normal'
             >
               Buy
             </Button>
