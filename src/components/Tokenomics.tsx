@@ -10,7 +10,7 @@ const Tokenomics = () => {
       <HStack
         h='590px'
         bgImage={backImage}
-        backgroundPosition='center'
+        bgPosition='center'
         bgRepeat='no-repeat'
         justify='space-between'
       >
