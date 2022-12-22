@@ -2,6 +2,8 @@ import { Box } from "@chakra-ui/react";
 import Contribute from "./Contribute";
 import Convex from "./Convex";
 import Earn from "./Earn";
+import EndBanner from "./EndBanner";
+import Footer from "./Footer";
 import Herosection from "./Herosection";
 import Navbar from "./Navbar";
 import Protocol from "./Protocol";
@@ -21,6 +23,8 @@ const App = () => {
       <Trade />
       <Tokenomics />
       <Contribute />
+      <EndBanner />
+      <Footer />
     </Box>
   );
 };
