@@ -23,19 +23,27 @@ const Navbar = () => {
     <Container h='77px' maxW='6xl'>
       <Flex w='full' h='full'>
         <HStack w='26%'>
-          <Text fontSize='3xl' fontWeight='bold'>
+          <Text fontSize='3xl' fontFamily='Aeonik Bold'>
             CORTEX DAO
           </Text>
         </HStack>
 
         <HStack w='74%' justify='space-between' color='gray.600' px='10px'>
-          <Link _hover={{ color: "black" }}>Protocol</Link>
+          <Link _hover={{ color: "black" }} href='#protocol'>
+            Protocol
+          </Link>
 
-          <Link _hover={{ color: "black" }}>Tokenomics</Link>
+          <Link _hover={{ color: "black" }} href='#tokenomics'>
+            Tokenomics
+          </Link>
 
-          <Link _hover={{ color: "black" }}>DAO</Link>
+          <Link _hover={{ color: "black" }} href='#dao'>
+            DAO
+          </Link>
 
-          <Link _hover={{ color: "black" }}>CXD Token</Link>
+          <Link _hover={{ color: "black" }} href='#cxdtoken'>
+            CXD Token
+          </Link>
 
           <Popover trigger='hover'>
             <PopoverTrigger>

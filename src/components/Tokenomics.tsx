@@ -6,7 +6,7 @@ import triplearrow from "../assets/triple-arrows.svg";
 
 const Tokenomics = () => {
   return (
-    <Container maxW='6xl' mt='300px'>
+    <Container maxW='6xl' mt='300px' id='tokenomics'>
       <HStack
         h='590px'
         bgImage={backImage}

@@ -6,7 +6,13 @@ import halborn from "../assets/halborn.png";
 
 const EndBanner = () => {
   return (
-    <Box mt='130px' pb='70px' bg='linear-gradient(108deg, #191f2d 0%, #363f53 51%)' color='#EFEFEF'>
+    <Box
+      mt='130px'
+      pb='70px'
+      bg='linear-gradient(108deg, #191f2d 0%, #363f53 51%)'
+      color='#EFEFEF'
+      id='cxdtoken'
+    >
       <Container maxW='6xl'>
         <VStack spacing='70px'>
           <HStack pt='75px'>

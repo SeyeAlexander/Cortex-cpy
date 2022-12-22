@@ -7,7 +7,7 @@ import risk from "../assets/cloud.png";
 
 const Protocol = () => {
   return (
-    <Box>
+    <Box id='protocol'>
       <Container maxW='6xl' mt='40px'>
         <VStack>
           <VStack lineHeight={{ xl: "63px", "2xl": "80px" }}>

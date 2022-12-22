@@ -4,7 +4,7 @@ import icon1 from "../assets/icon1.svg";
 
 const Contribute = () => {
   return (
-    <Container maxW='6xl' mt='120px'>
+    <Container maxW='6xl' mt='120px' id='dao'>
       <Flex w='full' justify='space-between' gap='20px'>
         <VStack
           className='bg'
