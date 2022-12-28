@@ -15,33 +15,43 @@ import icontwo from "../assets/icon2.svg";
 
 const Herosection = () => {
   return (
-    <Container maxW='6xl'>
-      <Flex w='full' justify='space-between'>
-        <VStack alignItems='flex-start' justify='center' position='relative' py='140px'>
-          <Box lineHeight={{ xl: "80px", "2xl": "100px" }}>
-            <Text fontSize={{ xl: "75px", "2xl": "95px" }} fontFamily='Aeonik Medium'>
+    <Container maxW={{ base: "sm", xl: "6xl" }}>
+      <Flex w='full' justify='space-between' direction={{ base: "column-reverse", xl: "row" }}>
+        <VStack
+          alignItems='flex-start'
+          justify='center'
+          position='relative'
+          pt={{ base: "380px", xl: "140px" }}
+          pb={{ base: "50px", xl: "140px" }}
+        >
+          <Box lineHeight={{ base: "50px", xl: "80px", "2xl": "100px" }}>
+            <Text fontSize={{ base: "40px", xl: "75px", "2xl": "95px" }} fontFamily='Aeonik Medium'>
               Profit from the
             </Text>
-            <Text fontSize={{ xl: "75px", "2xl": "95px" }} fontFamily='Aeonik Bold'>
+            <Text fontSize={{ base: "40px", xl: "75px", "2xl": "95px" }} fontFamily='Aeonik Bold'>
               Curve Wars.
             </Text>
           </Box>
 
           <Text
-            fontSize='18px'
+            fontSize={{ base: "16px", xl: "18px" }}
             color='gray.500'
-            pb='40px'
+            pb={{ base: "20px", xl: "40px" }}
             lineHeight={{ xl: "25px", "2xl": "30px" }}
           >
             Diversified exposure to Curve and Convex <br /> through the purchase of a single index
             token.
           </Text>
 
-          <HStack pb={{ xl: "75px", "2xl": "140px" }}>
+          <Flex
+            pb={{ xl: "75px", "2xl": "140px" }}
+            direction={{ base: "column", xl: "row" }}
+            gap={{ base: "5px", xl: "10px" }}
+            w='full'
+          >
             <Button
-              mr='10px'
               colorScheme='green'
-              w='230px'
+              w={{ base: "full", xl: "230px" }}
               borderRadius='10px'
               h='60px'
               fontSize='16px'
@@ -49,10 +59,11 @@ const Herosection = () => {
             >
               Launch App
             </Button>
+
             <Button
               colorScheme='green'
-              w='230px'
               borderRadius='10px'
+              w={{ base: "full", xl: "230px" }}
               h='60px'
               fontSize='16px'
               fontWeight='bold'
@@ -61,9 +72,9 @@ const Herosection = () => {
             >
               Tokenomics
             </Button>
-          </HStack>
+          </Flex>
 
-          <HStack>
+          <HStack display={{ base: "none", lg: "flex" }}>
             <HStack spacing={1} pr='10px'>
               <Image src={iconone} w='30px' />
               <Text color='gray.500' fontWeight='15px'>
@@ -81,7 +92,7 @@ const Herosection = () => {
         </VStack>
 
         <VStack>
-          <Image src={logo} id='logo' w={{ xl: "550px", "2xl": "34%" }} />
+          <Image src={logo} id='logo' w={{ base: "320px", xl: "550px", "2xl": "34%" }} />
         </VStack>
       </Flex>
     </Container>

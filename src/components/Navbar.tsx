@@ -20,15 +20,21 @@ import telegram from "../assets/telegram.png";
 
 const Navbar = () => {
   return (
-    <Container h='77px' maxW='6xl'>
+    <Container h='77px' maxW={{ base: "sm", xl: "6xl" }}>
       <Flex w='full' h='full'>
-        <HStack w='26%'>
+        <HStack w={{ base: "50%", xl: "26%" }}>
           <Text fontSize='3xl' fontFamily='Aeonik Bold'>
-            CORTEX DAO
+            CORTEX
           </Text>
         </HStack>
 
-        <HStack w='74%' justify='space-between' color='gray.600' px='10px'>
+        <HStack
+          w='74%'
+          justify='space-between'
+          color='gray.600'
+          px='10px'
+          display={{ base: "none", lg: "flex" }}
+        >
           <Link _hover={{ color: "black" }} href='#protocol'>
             Protocol
           </Link>
