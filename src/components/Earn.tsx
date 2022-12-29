@@ -5,8 +5,15 @@ import logo from "../assets/cortex-logo2.svg";
 const Earn = () => {
   return (
     <Container maxW='6xl' mt='200px'>
-      <Flex justify='center' gap='100px'>
-        <VStack align='flex-start' bg='white' w='33%' h='340px' borderRadius='20px' p='30px'>
+      <Flex justify='center' gap='100px' direction={{ base: "column", xl: "row" }} w='full'>
+        <VStack
+          align='flex-start'
+          bg='white'
+          w={{ base: "full", xl: "33%" }}
+          h='340px'
+          borderRadius='20px'
+          p='30px'
+        >
           <HStack w='full' borderRadius='20px' h='57px' shadow='md' mb='10px' p='5px'>
             <HStack justify='center' bg='#E3F1EC' w='50%' borderRadius='15px' h='full'>
               <Text fontFamily='Aeonik Regular' fontSize='21px' color='green'>
@@ -74,7 +81,7 @@ const Earn = () => {
           </Box>
         </VStack>
 
-        <VStack w='34%' h='320px' align='flex-start'>
+        <VStack w={{ base: "full", xl: "34%" }} h='320px' align='flex-start'>
           <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='44px'>
             Instantly begin
           </Text>

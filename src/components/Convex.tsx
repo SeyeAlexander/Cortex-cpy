@@ -13,8 +13,8 @@ import icon10 from "../assets/three-crv.5ffb8695.svg";
 const Convex = () => {
   return (
     <Container maxW='6xl' mt='70px'>
-      <Flex justify='center' gap='40px'>
-        <VStack align='flex-start' w='45%' h='300px' pt='50px'>
+      <Flex justify='center' gap='40px' direction={{ base: "column-reverse", xl: "row" }} w='full'>
+        <VStack align='flex-start' w={{ base: "full", xl: "45%" }} h='300px' pt='50px'>
           <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='45px'>
             Broad and diversified exposure to the
           </Text>
@@ -23,7 +23,7 @@ const Convex = () => {
           </Text>
         </VStack>
 
-        <VStack w='40%' h='500px' align='flex-start'>
+        <VStack w={{ base: "full", xl: "40%" }} h='500px' align='flex-start'>
           <HStack ml='240px' w='150px' h='100px' borderRadius='15px' bg='white' justify='center'>
             <Image src={icon1} w='40px' />
 

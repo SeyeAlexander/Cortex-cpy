@@ -6,8 +6,8 @@ const Trade = () => {
   return (
     <Container maxW='6xl' mt='40px'>
       {/* bg='#191F2D' */}
-      <Flex gap='130px' justify='center'>
-        <HStack w='40%' justify='space-between'>
+      <Flex gap='130px' justify='center' direction={{ base: "column", xl: "row" }} w='full'>
+        <HStack w={{ base: "full", xl: "40%" }} justify='space-between'>
           <VStack w='39%' mt='-70px'>
             <VStack
               w='full'
@@ -92,7 +92,7 @@ const Trade = () => {
           </VStack>
         </HStack>
 
-        <HStack w='30%'>
+        <HStack w={{ base: "full", xl: "30%" }}>
           <VStack w='full' align='flex-start'>
             <Text fontFamily='Aeonik Bold' fontSize='40px' lineHeight='38px'>
               No commitment.
