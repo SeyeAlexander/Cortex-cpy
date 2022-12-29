@@ -1,4 +1,4 @@
-import { Box, Container, VStack, HStack, Text, Link, Image } from "@chakra-ui/react";
+import { Box, Container, VStack, HStack, Flex, Text, Link, Image } from "@chakra-ui/react";
 import discord from "../assets/discord.png";
 import medium from "../assets/medium.png";
 import twitter from "../assets/twitter.png";
@@ -8,89 +8,118 @@ const Footer = () => {
   return (
     <Box w='full' bg='#191F2D'>
       <Container maxW='6xl'>
-        <VStack py='70px' spacing='130px'>
-          <HStack w='full' align='flex-start'>
-            <VStack w='50%' align='flex-start'>
+        <VStack py={{ base: "40px", xl: "70px" }} spacing={{ base: "40px", xl: "130px" }}>
+          <Flex
+            w='full'
+            align='flex-start'
+            direction={{ base: "column", xl: "row" }}
+            gap={{ base: "40px", xl: "0" }}
+          >
+            <VStack w={{ base: "full", xl: "50%" }} align='flex-start'>
               <Link href='/'>
                 <Text fontSize='3xl' fontFamily='Aeonik Bold ' color='#EFEFEF'>
-                  CORTEX DAO
+                  CORTEX
                 </Text>
               </Link>
             </VStack>
 
-            <VStack w='15%' align='flex-start'>
-              <Link
-                fontFamily='Aeonik Regular '
-                fontSize='17px'
-                color='#EFEFEF'
-                _hover={{ color: "green" }}
-                href='#dao'
+            <HStack w={{ base: "full", xl: "50%" }} align='flex-start'>
+              <Flex
+                w={{ base: "50%", xl: "70%" }}
+                align='flex-start'
+                direction={{ base: "column", xl: "row" }}
+                gap={{ base: "15px", xl: "0" }}
               >
-                DAO
-              </Link>
+                <VStack w='50%' align='flex-start' spacing={{ base: "15px", xl: "0" }}>
+                  <Link
+                    fontFamily='Aeonik Regular '
+                    fontSize='17px'
+                    color='#EFEFEF'
+                    _hover={{ color: "green" }}
+                    href='#dao'
+                  >
+                    DAO
+                  </Link>
 
-              <Link
-                fontFamily='Aeonik Regular '
-                fontSize='17px'
-                color='#EFEFEF'
-                _hover={{ color: "green" }}
-                href='#protocol'
+                  <Link
+                    fontFamily='Aeonik Regular '
+                    fontSize='17px'
+                    color='#EFEFEF'
+                    _hover={{ color: "green" }}
+                    href='#protocol'
+                  >
+                    Protocol
+                  </Link>
+                </VStack>
+
+                <VStack w='50%' align='flex-start' spacing={{ base: "15px", xl: "0" }}>
+                  <Link
+                    fontFamily='Aeonik Regular '
+                    fontSize='17px'
+                    color='#EFEFEF'
+                    _hover={{ color: "green" }}
+                    href='#cxdtoken'
+                  >
+                    CXD Token
+                  </Link>
+
+                  <Link
+                    fontFamily='Aeonik Regular '
+                    fontSize='17px'
+                    color='#EFEFEF'
+                    _hover={{ color: "green" }}
+                    href='#tokenomics'
+                  >
+                    Tokenomics
+                  </Link>
+                </VStack>
+              </Flex>
+
+              <VStack
+                w={{ base: "50%", xl: "30%" }}
+                align='flex-start'
+                spacing={{ base: "15px", xl: "0" }}
               >
-                Protocol
-              </Link>
-            </VStack>
+                <Link display={{ xl: "none" }}>
+                  <Text fontFamily='Aeonik Medium ' fontSize='16px' color='#EFEFEF'>
+                    Docs
+                  </Text>
+                </Link>
 
-            <VStack w='20%' align='flex-start'>
-              <Link
-                fontFamily='Aeonik Regular '
-                fontSize='17px'
-                color='#EFEFEF'
-                _hover={{ color: "green" }}
-                href='#cxdtoken'
-              >
-                CXD Token
-              </Link>
+                <Link
+                  fontFamily='Aeonik Regular '
+                  fontSize='16px'
+                  color='#A0A6B5'
+                  _hover={{ color: "green" }}
+                >
+                  Terms of Service
+                </Link>
 
-              <Link
-                fontFamily='Aeonik Regular '
-                fontSize='17px'
-                color='#EFEFEF'
-                _hover={{ color: "green" }}
-                href='#tokenomics'
-              >
-                Tokenomics
-              </Link>
-            </VStack>
+                <Link
+                  fontFamily='Aeonik Regular '
+                  fontSize='16px'
+                  color='#A0A6B5'
+                  _hover={{ color: "green" }}
+                >
+                  Privacy
+                </Link>
+              </VStack>
+            </HStack>
+          </Flex>
 
-            <VStack w='15%' align='flex-start'>
-              <Link
-                fontFamily='Aeonik Regular '
-                fontSize='16px'
-                color='#A0A6B5'
-                _hover={{ color: "green" }}
-              >
-                Terms of Service
-              </Link>
-
-              <Link
-                fontFamily='Aeonik Regular '
-                fontSize='16px'
-                color='#A0A6B5'
-                _hover={{ color: "green" }}
-              >
-                Privacy
-              </Link>
-            </VStack>
-          </HStack>
-
-          <HStack w='full' align='flex-start'>
-            <HStack w='50%' align='flex-start'>
-              <Text fontFamily='Aeonik Medium ' fontSize='16px' color='#A0A6B5'>
-                Cortex 2022 All Rights Reserved.
+          <Flex
+            w='full'
+            align='flex-start'
+            direction={{ base: "column-reverse", xl: "row" }}
+            gap={{ base: "25px", xl: "0" }}
+          >
+            <HStack w={{ base: "full", xl: "50%" }} align='flex-start'>
+              <Text fontFamily='Aeonik Regular ' fontSize='16px' color='#A0A6B5'>
+                Cortex 2022 All Rights reserved.
               </Text>
             </HStack>
 
-            <HStack w='35%' align='flex-start' spacing='30px'>
+            <HStack w={{ base: "full", xl: "35%" }} align='flex-start' spacing='30px'>
               <Link>
                 <Image src={discord} w='30px' />
               </Link>
@@ -108,14 +137,14 @@ const Footer = () => {
               </Link>
             </HStack>
 
-            <HStack w='15%' align='flex-start'>
+            <HStack w='15%' align='flex-start' display={{ base: "none", xl: "block" }}>
               <Link>
                 <Text fontFamily='Aeonik Medium ' fontSize='16px' color='#EFEFEF'>
                   Docs
                 </Text>
               </Link>
             </HStack>
-          </HStack>
+          </Flex>
         </VStack>
       </Container>
     </Box>
