@@ -1,4 +1,4 @@
-import { Box, Container, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import tag from "../assets/tag.png";
 import shield from "../assets/shield.png";
 import umbrella from "../assets/umbrella.png";
@@ -10,92 +10,168 @@ const Protocol = () => {
     <Box id='protocol'>
       <Container maxW='6xl' mt='40px'>
         <VStack>
-          <VStack lineHeight={{ xl: "63px", "2xl": "80px" }}>
-            <Text fontFamily='Aeonik Regular' fontSize={{ xl: "73px", "2xl": "90px" }}>
+          <VStack lineHeight={{ base: "25px", xl: "63px", "2xl": "80px" }} w='full'>
+            <Text
+              fontFamily='Aeonik Regular'
+              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
+              display={{ base: "none", xl: "block" }}
+            >
               Gain exposure to the
             </Text>
-            <Text fontFamily='Aeonik Regular' fontSize={{ xl: "73px", "2xl": "90px" }}>
+
+            <Text
+              fontFamily='Aeonik Regular'
+              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
+              display={{ base: "block", xl: "none" }}
+            >
+              Gain exposure to the highest
+            </Text>
+
+            <Text
+              fontFamily='Aeonik Regular'
+              display={{ base: "none", xl: "block" }}
+              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
+            >
               highest quality Curves and
             </Text>
-            <Text fontFamily='Aeonik Regular' fontSize={{ xl: "73px", "2xl": "90px" }}>
+
+            <Text
+              fontFamily='Aeonik Regular'
+              display={{ base: "block", xl: "none" }}
+              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
+            >
+              quality Curves and Convex
+            </Text>
+
+            <Text
+              fontFamily='Aeonik Regular'
+              display={{ base: "none", xl: "block" }}
+              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
+            >
               Convex pools.
             </Text>
 
-            <HStack align='flex-end' spacing='25px' pt='80px'>
-              <VStack
+            <Text
+              fontFamily='Aeonik Regular'
+              display={{ base: "block", xl: "none" }}
+              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
+            >
+              pools.
+            </Text>
+
+            <Flex
+              align={{ base: "center", xl: "flex-end" }}
+              flexDirection={{ base: "column", xl: "row" }}
+              gap={{ base: "10px", xl: "25px" }}
+              pt={{ base: "30px", xl: "80px" }}
+            >
+              <Flex
                 align='flex-start'
-                borderRadius='20px'
-                p='30px'
-                h='280px'
-                w='230px'
+                gap='10px'
+                borderRadius={{ base: "10px", xl: "20px" }}
+                p={{ base: "20px", xl: "30px" }}
                 bg='white'
+                h={{ xl: "260px" }}
+                w={{ base: "full", xl: "226px" }}
+                flexDirection={{ base: "row", xl: "column" }}
               >
-                <Image src={tag} w='40px' />
-                <Text fontSize='27px' lineHeight='40px'>
+                <Image src={tag} w={{ base: "30px", xl: "40px" }} />
+                <Text
+                  fontSize={{ base: "17px", xl: "27px" }}
+                  lineHeight={{ base: "28px", xl: "40px" }}
+                >
                   Hands-off. No ongoing costs or maintenance.
                 </Text>
-              </VStack>
+              </Flex>
 
-              <VStack
+              <Flex
                 align='flex-start'
-                borderRadius='20px'
-                p='30px'
-                h='200px'
-                w='400px'
+                gap='10px'
                 bg='white'
+                borderRadius={{ base: "10px", xl: "20px" }}
+                p={{ base: "20px", xl: "30px" }}
+                h={{ xl: "180px" }}
+                w={{ base: "full", xl: "400px" }}
+                flexDirection={{ base: "row", xl: "column" }}
               >
-                <Image src={risk} w='40px' />
-                <Text fontSize='27px' lineHeight='40px'>
+                <Image src={risk} w={{ base: "30px", xl: "40px" }} />
+                <Text
+                  fontSize={{ base: "17px", xl: "27px" }}
+                  lineHeight={{ base: "28px", xl: "40px" }}
+                >
                   Data-driven risk/reward assessments.
                 </Text>
-              </VStack>
-            </HStack>
+              </Flex>
+            </Flex>
 
-            <HStack align='flex-start' spacing='25px' pt='20px'>
-              <VStack align='flex-end' spacing='25px'>
-                <VStack
+            <Flex
+              align={{ base: "center", xl: "flex-start" }}
+              flexDirection={{ base: "column", xl: "row" }}
+              gap={{ base: "10px", xl: "25px" }}
+              pt={{ base: "0px", xl: "20px" }}
+            >
+              <VStack
+                align={{ base: "center", xl: "flex-end" }}
+                spacing={{ base: "10px", xl: "25px" }}
+              >
+                <Flex
                   align='flex-start'
-                  borderRadius='20px'
-                  p='30px'
-                  h='200px'
-                  w='550px'
+                  gap='10px'
+                  borderRadius={{ base: "10px", xl: "20px" }}
+                  p={{ base: "20px", xl: "30px" }}
+                  h={{ xl: "180px" }}
+                  w={{ base: "full", xl: "550px" }}
+                  flexDirection={{ base: "row", xl: "column" }}
                   bg='white'
                 >
-                  <Image src={secure} w='40px' />
-                  <Text fontSize='27px' lineHeight='40px'>
+                  <Image src={secure} w={{ base: "30px", xl: "40px" }} />
+                  <Text
+                    fontSize={{ base: "17px", xl: "27px" }}
+                    lineHeight={{ base: "28px", xl: "40px" }}
+                  >
                     Secure and stable returns are prioritised over risky degen yields.
                   </Text>
-                </VStack>
+                </Flex>
 
-                <VStack
+                <Flex
                   align='flex-start'
-                  borderRadius='20px'
-                  p='30px'
-                  h='220px'
-                  w='260px'
+                  gap='10px'
+                  borderRadius={{ base: "10px", xl: "20px" }}
+                  p={{ base: "20px", xl: "30px" }}
+                  h={{ xl: "220px" }}
+                  w={{ base: "full", xl: "260px" }}
+                  flexDirection={{ base: "row", xl: "column" }}
                   bg='white'
                 >
-                  <Image src={shield} w='40px' />
-                  <Text fontSize='27px' lineHeight='40px'>
+                  <Image src={shield} w={{ base: "30px", xl: "40px" }} />
+                  <Text
+                    fontSize={{ base: "17px", xl: "27px" }}
+                    lineHeight={{ base: "28px", xl: "40px" }}
+                  >
                     Secure and audited smart contracts.
                   </Text>
-                </VStack>
+                </Flex>
               </VStack>
 
-              <VStack
+              <Flex
                 align='flex-start'
-                borderRadius='20px'
-                p='30px'
-                h='260px'
-                w='300px'
+                gap='10px'
+                borderRadius={{ base: "10px", xl: "20px" }}
+                p={{ base: "20px", xl: "30px" }}
+                h={{ xl: "260px" }}
+                w={{ base: "full", xl: "300px" }}
+                flexDirection={{ base: "row", xl: "column" }}
                 bg='white'
               >
-                <Image src={umbrella} w='40px' />
-                <Text fontSize='27px' lineHeight='40px'>
+                <Image src={umbrella} w={{ base: "30px", xl: "40px" }} />
+                <Text
+                  fontSize={{ base: "17px", xl: "27px" }}
+                  lineHeight={{ base: "28px", xl: "40px" }}
+                >
                   Low correlation to BTC , ETH, Defi blue chips & S&P 500.
                 </Text>
-              </VStack>
-            </HStack>
+              </Flex>
+            </Flex>
           </VStack>
         </VStack>
       </Container>

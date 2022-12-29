@@ -22,7 +22,7 @@ const Herosection = () => {
           justify='center'
           position='relative'
           pt={{ base: "380px", xl: "140px" }}
-          pb={{ base: "50px", xl: "140px" }}
+          pb={{ base: "70px", xl: "140px" }}
         >
           <Box lineHeight={{ base: "50px", xl: "80px", "2xl": "100px" }}>
             <Text fontSize={{ base: "40px", xl: "75px", "2xl": "95px" }} fontFamily='Aeonik Medium'>
@@ -44,7 +44,7 @@ const Herosection = () => {
           </Text>
 
           <Flex
-            pb={{ xl: "75px", "2xl": "140px" }}
+            pb={{ base: "0", xl: "75px", "2xl": "140px" }}
             direction={{ base: "column", xl: "row" }}
             gap={{ base: "5px", xl: "10px" }}
             w='full'
