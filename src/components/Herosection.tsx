@@ -92,7 +92,12 @@ const Herosection = () => {
         </VStack>
 
         <VStack>
-          <Image src={logo} id='logo' w={{ base: "320px", xl: "550px", "2xl": "34%" }} />
+          <Image
+            src={logo}
+            id='logo'
+            w={{ base: "320px", xl: "550px", "2xl": "34%" }}
+            position='absolute'
+          />
         </VStack>
       </Flex>
     </Container>

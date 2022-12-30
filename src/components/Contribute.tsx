@@ -82,7 +82,7 @@ const Contribute = () => {
           </VStack>
 
           <VStack>
-            <Image src={daoBanner} id='logo' />
+            <Image src={daoBanner} id='logo' position='absolute' />
           </VStack>
         </Flex>
       </Flex>
