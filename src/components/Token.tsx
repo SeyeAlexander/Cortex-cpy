@@ -38,8 +38,26 @@ const Token = () => {
         >
           <Image src={logo} w={{ base: "40px", xl: "80px" }} />
 
-          <HStack pt={{ base: "15px", xl: "0" }} w='full' lineHeight={{ base: "20px", xl: "60px" }}>
-            <Text id='text' fontFamily='Aeonik Bold' fontSize={{ base: "28px", xl: "58px" }}>
+          <Text
+            fontFamily='Aeonik Regular'
+            fontSize={{ base: "28px", xl: "58px" }}
+            lineHeight={{ base: "30px", xl: "60px" }}
+            pb='30px'
+            as='span'
+          >
+            <Text
+              as='span'
+              id='text'
+              fontFamily='Aeonik Bold'
+              fontSize={{ base: "28px", xl: "58px" }}
+            >
+              idxCVX
+            </Text>{" "}
+            instantly diversifies your portfolio across the entire Convex Index.
+          </Text>
+
+          {/* <HStack pt={{ base: "15px", xl: "0" }} w='full' lineHeight={{ base: "20px", xl: "60px" }}>
+            <Text as='span' id='text' fontFamily='Aeonik Bold' fontSize={{ base: "28px", xl: "58px" }}>
               idxCVX
             </Text>
 
@@ -74,7 +92,7 @@ const Token = () => {
             display={{ xl: "none" }}
           >
             your portfolio across the entire Convex Index.
-          </Text>
+          </Text> */}
 
           <Button
             mr='10px'

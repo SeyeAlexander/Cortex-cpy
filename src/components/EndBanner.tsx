@@ -82,7 +82,7 @@ const EndBanner = () => {
                 src={logo}
                 position={{ base: "absolute", xl: "initial" }}
                 top='-30px'
-                left='220px'
+                left='200px'
               />
             </VStack>
 
@@ -127,7 +127,13 @@ const EndBanner = () => {
               Learn more
             </Button>
 
-            <HStack justify='space-between' w='full' pb={{ base: "40px", xl: "0" }}>
+            <HStack
+              justify={{ base: "center", xl: "space-between" }}
+              w='full'
+              spacing='20px'
+              pb={{ base: "40px", xl: "0" }}
+              wrap='wrap'
+            >
               <Text fontFamily='Aeonik Medium' fontSize='17px' color='#A0A6B5'>
                 Price: $2.34
               </Text>

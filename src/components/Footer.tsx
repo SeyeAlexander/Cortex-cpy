@@ -52,10 +52,10 @@ const Footer = () => {
                   </Link>
                 </VStack>
 
-                <VStack w='50%' align='flex-start' spacing={{ base: "15px", xl: "0" }}>
+                <VStack w='50%' align='flex-start' spacing={{ base: "15px", xl: "0" }} p={0}>
                   <Link
                     fontFamily='Aeonik Regular '
-                    fontSize='17px'
+                    fontSize='16px'
                     color='#EFEFEF'
                     _hover={{ color: "green" }}
                     href='#cxdtoken'

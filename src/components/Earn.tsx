@@ -81,31 +81,23 @@ const Earn = () => {
           </Box>
         </VStack>
 
-        <VStack w={{ base: "full", xl: "34%" }} h='320px' align='flex-start'>
-          <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='44px'>
-            Instantly begin
-          </Text>
-
-          <HStack lineHeight='35px'>
-            <Text fontFamily='Aeonik Regular' fontSize='40px'>
-              earning
-            </Text>
-            <Text fontFamily='Aeonik Bold' fontSize='40px'>
-              5.74
-            </Text>
-            <Text fontFamily='Aeonik Regular' fontSize='30px'>
-              %
-            </Text>
-            <Text fontFamily='Aeonik Bold' fontSize='40px'>
-              APR
-            </Text>
-            <Text fontFamily='Aeonik Regular' fontSize='40px'>
-              by
-            </Text>
-          </HStack>
-
-          <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='44px'>
-            simply purchasing the index Token.
+        <VStack
+          w={{ base: "full", xl: "34%" }}
+          h='320px'
+          align='flex-start'
+          lineHeight={{ base: "25px", xl: "44px" }}
+        >
+          <Text
+            align={{ base: "center", xl: "start" }}
+            as='span'
+            fontFamily='Aeonik Regular'
+            fontSize={{ base: "20px", xl: "40px" }}
+          >
+            Instantly begin earning{" "}
+            <Text as='span' fontFamily='Aeonik Bold' fontSize={{ base: "20px", xl: "40px" }}>
+              5.74% APR{" "}
+            </Text>{" "}
+            by simply purchasing the index Token.
           </Text>
         </VStack>
       </Flex>

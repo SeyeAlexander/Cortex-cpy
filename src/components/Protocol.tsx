@@ -10,53 +10,16 @@ const Protocol = () => {
     <Box id='protocol'>
       <Container maxW='6xl' mt='40px'>
         <VStack>
-          <VStack lineHeight={{ base: "25px", xl: "63px", "2xl": "80px" }} w='full'>
+          <VStack
+            lineHeight={{ base: "35px", xl: "70px", "2xl": "80px" }}
+            maxW={{ base: "full", xl: "4xl" }}
+          >
             <Text
+              align='center'
               fontFamily='Aeonik Regular'
               fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
-              display={{ base: "none", xl: "block" }}
             >
-              Gain exposure to the
-            </Text>
-
-            <Text
-              fontFamily='Aeonik Regular'
-              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
-              display={{ base: "block", xl: "none" }}
-            >
-              Gain exposure to the highest
-            </Text>
-
-            <Text
-              fontFamily='Aeonik Regular'
-              display={{ base: "none", xl: "block" }}
-              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
-            >
-              highest quality Curves and
-            </Text>
-
-            <Text
-              fontFamily='Aeonik Regular'
-              display={{ base: "block", xl: "none" }}
-              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
-            >
-              quality Curves and Convex
-            </Text>
-
-            <Text
-              fontFamily='Aeonik Regular'
-              display={{ base: "none", xl: "block" }}
-              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
-            >
-              Convex pools.
-            </Text>
-
-            <Text
-              fontFamily='Aeonik Regular'
-              display={{ base: "block", xl: "none" }}
-              fontSize={{ base: "28px", xl: "73px", "2xl": "90px" }}
-            >
-              pools.
+              Gain exposure to the highest quality Curve and Convex pools.
             </Text>
 
             <Flex
