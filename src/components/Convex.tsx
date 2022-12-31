@@ -22,7 +22,7 @@ const Convex = () => {
         <VStack
           align='flex-start'
           w={{ base: "full", xl: "45%" }}
-          pt={{ base: "0px", xl: "50px" }}
+          pt={{ base: "45px", xl: "50px" }}
           lineHeight={{ base: "25px", xl: "44px" }}
         >
           <Text
@@ -39,43 +39,88 @@ const Convex = () => {
           </Text>
         </VStack>
 
-        <VStack w={{ base: "full", xl: "40%" }} h='500px' align='flex-start'>
-          <HStack ml='240px' w='150px' h='100px' borderRadius='15px' bg='white' justify='center'>
-            <Image src={icon1} w='40px' />
+        <VStack w={{ base: "full", xl: "40%" }} align={{ base: "center", xl: "flex-start" }}>
+          <HStack
+            ml={{ base: "70px", xl: "200px" }}
+            px={{ base: "25px", xl: "35px" }}
+            py={{ base: "20px", xl: "30px" }}
+            borderRadius={{ base: "10px", xl: "15px" }}
+            bg='white'
+            justify='center'
+          >
+            <Image src={icon1} w={{ base: "25px", xl: "40px" }} />
 
-            <Image src={icon10} w='40px' id='iconlap' />
+            <Image src={icon10} w={{ base: "25px", xl: "40px" }} id='iconlap' />
           </HStack>
 
-          <HStack pl='35px' pt='10px' spacing='20px'>
-            <HStack justify='center' w='230px' h='100px' borderRadius='15px' bg='white'>
-              <Image src={icon2} w='40px' />
-              <Image src={icon3} w='40px' id='iconlap' />
-              <Image src={icon4} w='40px' id='iconlap' />
-              <Image src={icon5} w='40px' id='iconlap' />
+          <HStack
+            pl={{ base: "0", xl: "35px" }}
+            pt={{ base: "5px", xl: "10px" }}
+            spacing={{ base: "15px", xl: "20px" }}
+          >
+            <HStack
+              justify='center'
+              px={{ base: "25px", xl: "35px" }}
+              py={{ base: "20px", xl: "30px" }}
+              borderRadius={{ base: "10px", xl: "15px" }}
+              bg='white'
+            >
+              <Image src={icon2} w={{ base: "25px", xl: "40px" }} />
+              <Image src={icon3} w={{ base: "25px", xl: "40px" }} id='iconlap' />
+              <Image src={icon4} w={{ base: "25px", xl: "40px" }} id='iconlap' />
+              <Image src={icon5} w={{ base: "25px", xl: "40px" }} id='iconlap' />
             </HStack>
 
-            <HStack justify='center' w='150px' h='100px' borderRadius='15px' bg='white'>
-              <Image src={icon6} w='40px' />
-              <Image src={icon10} w='40px' id='iconlap' />
+            <HStack
+              justify='center'
+              px={{ base: "25px", xl: "35px" }}
+              py={{ base: "20px", xl: "30px" }}
+              borderRadius={{ base: "10px", xl: "15px" }}
+              bg='white'
+            >
+              <Image src={icon6} w={{ base: "25px", xl: "40px" }} />
+              <Image src={icon10} w={{ base: "25px", xl: "40px" }} id='iconlap' />
             </HStack>
           </HStack>
 
-          <HStack pl='70px' pt='10px' spacing='20px'>
-            <HStack justify='center' w='150px' h='100px' borderRadius='15px' bg='white'>
-              <Image src={icon7} w='40px' />
-              <Image src={icon10} w='40px' id='iconlap' />
+          <HStack
+            pl={{ base: "0px", xl: "70px" }}
+            pt={{ base: "5px", xl: "10px" }}
+            spacing={{ base: "15px", xl: "20px" }}
+          >
+            <HStack
+              justify='center'
+              px={{ base: "25px", xl: "35px" }}
+              py={{ base: "20px", xl: "30px" }}
+              borderRadius={{ base: "10px", xl: "15px" }}
+              bg='white'
+            >
+              <Image src={icon7} w={{ base: "25px", xl: "40px" }} />
+              <Image src={icon10} w={{ base: "25px", xl: "40px" }} id='iconlap' />
             </HStack>
 
-            <HStack justify='center' w='150px' h='100px' borderRadius='15px' bg='white'>
-              <Image src={icon8} w='40px' />
-              <Image src={icon10} w='40px' id='iconlap' />
+            <HStack
+              justify='center'
+              px={{ base: "25px", xl: "35px" }}
+              py={{ base: "20px", xl: "30px" }}
+              borderRadius={{ base: "10px", xl: "15px" }}
+              bg='white'
+            >
+              <Image src={icon8} w={{ base: "25px", xl: "40px" }} />
+              <Image src={icon10} w={{ base: "25px", xl: "40px" }} id='iconlap' />
             </HStack>
           </HStack>
 
-          <Box pl='170px' pt='10px'>
-            <HStack justify='center' w='150px' h='100px' borderRadius='15px' bg='white'>
-              <Image src={icon9} w='40px' />
-              <Image src={icon10} w='40px' id='iconlap' />
+          <Box pl={{ base: "0px", xl: "170px" }} pt={{ base: "5px", xl: "10px" }}>
+            <HStack
+              justify='center'
+              px={{ base: "25px", xl: "35px" }}
+              py={{ base: "20px", xl: "30px" }}
+              borderRadius={{ base: "10px", xl: "15px" }}
+              bg='white'
+            >
+              <Image src={icon9} w={{ base: "25px", xl: "40px" }} />
+              <Image src={icon10} w={{ base: "25px", xl: "40px" }} id='iconlap' />
             </HStack>
           </Box>
         </VStack>

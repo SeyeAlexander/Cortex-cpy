@@ -4,7 +4,7 @@ import icon1 from "../assets/icon1.svg";
 
 const Trade = () => {
   return (
-    <Container maxW='6xl' mt={{ base: "80px", xl: "40px" }}>
+    <Container maxW='6xl' mt='80px'>
       <Flex
         gap={{ base: "30px", xl: "130px" }}
         justify='center'
