@@ -4,37 +4,55 @@ import icon1 from "../assets/icon1.svg";
 
 const Trade = () => {
   return (
-    <Container maxW='6xl' mt='40px'>
-      {/* bg='#191F2D' */}
-      <Flex gap='130px' justify='center' direction={{ base: "column", xl: "row" }} w='full'>
-        <HStack w={{ base: "full", xl: "40%" }} justify='space-between'>
-          <VStack w='39%' mt='-70px'>
+    <Container maxW='6xl' mt={{ base: "80px", xl: "40px" }}>
+      <Flex
+        gap={{ base: "30px", xl: "130px" }}
+        justify='center'
+        direction={{ base: "column", xl: "row" }}
+        w='full'
+      >
+        <HStack
+          w={{ base: "full", xl: "40%" }}
+          justify={{ base: "center", xl: "space-between" }}
+          spacing={{ base: "20px", xl: "0px" }}
+        >
+          <VStack mt={{ base: "-20px", xl: "-70px" }}>
             <VStack
               w='full'
               bg='white'
               align='flex-start'
-              px='30px'
-              pt='30px'
-              borderRadius='20px'
-              mb='10px'
-              pb='35px'
+              px={{ base: "15px", xl: "30px" }}
+              pt={{ base: "15px", xl: "30px" }}
+              borderRadius={{ base: "10px", xl: "20px" }}
+              mb={{ base: "5px", xl: "10px" }}
+              pb={{ base: "15px", xl: "35px" }}
               spacing='12px'
             >
-              <Text fontFamily='Aeonik Bold'>Home</Text>
-              <Text fontFamily='Aeonik Bold' color='green'>
+              <Text fontFamily='Aeonik Bold' fontSize={{ base: "9px", xl: "initial" }}>
+                Home
+              </Text>
+              <Text
+                fontFamily='Aeonik Bold'
+                fontSize={{ base: "9px", xl: "initial" }}
+                color='green'
+              >
                 Trade idxCVX
               </Text>
-              <Text fontFamily='Aeonik Bold'>Lock CXD</Text>
-              <Text fontFamily='Aeonik Bold'>Liquidity Pools</Text>
+              <Text fontFamily='Aeonik Bold' fontSize={{ base: "9px", xl: "initial" }}>
+                Lock CXD
+              </Text>
+              <Text fontFamily='Aeonik Bold' fontSize={{ base: "9px", xl: "initial" }}>
+                Liquidity Pools
+              </Text>
             </VStack>
 
             <Button
               colorScheme='green'
               w='full'
-              borderRadius='20px'
-              h='54px'
+              borderRadius={{ base: "10px", xl: "20px" }}
+              h={{ base: "35px", xl: "54px" }}
               fontFamily='Aeonik Regular'
-              fontSize='21px'
+              fontSize={{ base: "14px", xl: "21px" }}
               fontWeight='normal'
             >
               Sell
@@ -43,48 +61,61 @@ const Trade = () => {
 
           <VStack
             align='flex-start'
-            px='30px'
-            pt='30px'
-            pb='40px'
-            w='56%'
+            px={{ base: "15px", xl: "30px" }}
+            pt={{ base: "15px", xl: "30px" }}
+            pb={{ base: "15px", xl: "40px" }}
             bg='white'
-            borderRadius='20px'
+            borderRadius={{ base: "10px", xl: "20px" }}
           >
-            <Text fontFamily='Aeonik Medium' fontSize='25px'>
+            <Text fontFamily='Aeonik Medium' fontSize={{ base: "14px", xl: "25px" }}>
               My balance
             </Text>
 
             <HStack align='flex-start'>
-              <Image src={logo} w='40px' />
+              <Box pt={{ base: "7px", xl: "5px" }}>
+                <Image src={logo} w={{ base: "20px", xl: "40px" }} />
+              </Box>
+
               <VStack align='flex-start' spacing='-5px'>
-                <Text fontFamily='Aeonik Bold' fontSize='33px'>
+                <Text fontFamily='Aeonik Bold' fontSize={{ base: "23px", xl: "33px" }}>
                   64.20
                 </Text>
-                <Text fontSize='15px' color='gray.500'>
+                <Text fontSize={{ base: "9px", xl: "15px" }} color='gray.500'>
                   Value $$$
                 </Text>
               </VStack>
 
-              <Box pt='20px'>
-                <Text fontFamily='Aeonik Medium' fontSize='12px' color='gray.500'>
+              <Box pt={{ base: "14px", xl: "20px" }}>
+                <Text
+                  fontFamily='Aeonik Medium'
+                  fontSize={{ base: "9px", xl: "12px" }}
+                  color='gray.500'
+                >
                   idxCVX
                 </Text>
               </Box>
             </HStack>
 
             <HStack align='flex-start'>
-              <Image src={icon1} w='40px' />
+              <Box pt={{ base: "7px", xl: "5px" }}>
+                <Image src={icon1} w={{ base: "20px", xl: "40px" }} />
+              </Box>
+
               <VStack align='flex-start' spacing='-5px'>
-                <Text fontFamily='Aeonik Bold' fontSize='33px'>
+                <Text fontFamily='Aeonik Bold' fontSize={{ base: "23px", xl: "33px" }}>
                   10.60
                 </Text>
-                <Text fontSize='15px' color='gray.500'>
+                <Text fontSize={{ base: "9px", xl: "15px" }} color='gray.500'>
                   Value $$$
                 </Text>
               </VStack>
 
-              <Box pt='20px'>
-                <Text fontFamily='Aeonik Medium' fontSize='12px' color='gray.500'>
+              <Box pt={{ base: "14px", xl: "20px" }}>
+                <Text
+                  fontFamily='Aeonik Medium'
+                  fontSize={{ base: "9px", xl: "12px" }}
+                  color='gray.500'
+                >
                   CXD
                 </Text>
               </Box>
@@ -92,16 +123,25 @@ const Trade = () => {
           </VStack>
         </HStack>
 
-        <HStack w={{ base: "full", xl: "30%" }}>
-          <VStack w='full' align='flex-start'>
-            <Text fontFamily='Aeonik Bold' fontSize='40px' lineHeight='38px'>
-              No commitment.
-            </Text>
-            <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='45px'>
-              Sell your Index Token any time.
+        <VStack w={{ base: "full", xl: "30%" }} justify='center'>
+          <VStack
+            w={{ base: "xs", xl: "full" }}
+            justify='center'
+            lineHeight={{ base: "20px", xl: "45px" }}
+          >
+            <Text
+              as='span'
+              align={{ base: "center", xl: "start" }}
+              fontFamily='Aeonik Bold'
+              fontSize={{ base: "20px", xl: "40px" }}
+            >
+              No commitment. {""} <br />
+              <Text as='span' fontFamily='Aeonik Regular' fontSize={{ base: "20px", xl: "40px" }}>
+                Sell your Index Token any time.
+              </Text>
             </Text>
           </VStack>
-        </HStack>
+        </VStack>
       </Flex>
     </Container>
   );

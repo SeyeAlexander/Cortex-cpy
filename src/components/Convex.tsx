@@ -12,14 +12,30 @@ import icon10 from "../assets/three-crv.5ffb8695.svg";
 
 const Convex = () => {
   return (
-    <Container maxW='6xl' mt='70px'>
-      <Flex justify='center' gap='40px' direction={{ base: "column-reverse", xl: "row" }} w='full'>
-        <VStack align='flex-start' w={{ base: "full", xl: "45%" }} h='300px' pt='50px'>
-          <Text fontFamily='Aeonik Regular' fontSize='40px' lineHeight='45px'>
+    <Container maxW='6xl' mt={{ base: "90px", xl: "70px" }}>
+      <Flex
+        justify='center'
+        gap={{ base: "0", xl: "40px" }}
+        direction={{ base: "column-reverse", xl: "row" }}
+        w='full'
+      >
+        <VStack
+          align='flex-start'
+          w={{ base: "full", xl: "45%" }}
+          pt={{ base: "0px", xl: "50px" }}
+          lineHeight={{ base: "25px", xl: "44px" }}
+        >
+          <Text
+            as='span'
+            align={{ base: "center", xl: "start" }}
+            fontFamily='Aeonik Regular'
+            fontSize={{ base: "20px", xl: "40px" }}
+          >
             Broad and diversified exposure to the
-          </Text>
-          <Text fontFamily='Aeonik Bold' fontSize='40px' lineHeight='45px'>
-            Curve/Convex Ecosystem
+            <Text as='span' fontFamily='Aeonik Bold' fontSize={{ base: "20px", xl: "40px" }}>
+              {" "}
+              Curve/Convex Ecosystem
+            </Text>
           </Text>
         </VStack>
 
