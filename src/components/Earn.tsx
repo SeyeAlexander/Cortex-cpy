@@ -110,7 +110,7 @@ const Earn = () => {
 
         <VStack
           w={{ base: "full", xl: "34%" }}
-          align='flex-start'
+          align={{ base: "center", xl: "flex-start" }}
           lineHeight={{ base: "25px", xl: "44px" }}
         >
           <Text

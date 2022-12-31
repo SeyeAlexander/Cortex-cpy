@@ -15,7 +15,7 @@ import icontwo from "../assets/icon2.svg";
 
 const Herosection = () => {
   return (
-    <Container maxW={{ base: "sm", xl: "6xl" }}>
+    <Container maxW={{ base: "90%", xl: "6xl" }}>
       <Flex w='full' justify='space-between' direction={{ base: "column-reverse", xl: "row" }}>
         <VStack
           alignItems='flex-start'
@@ -38,9 +38,20 @@ const Herosection = () => {
             color='gray.500'
             pb={{ base: "20px", xl: "40px" }}
             lineHeight={{ xl: "25px", "2xl": "30px" }}
+            display={{ base: "none", xl: "block" }}
           >
             Diversified exposure to Curve and Convex <br /> through the purchase of a single index
             token.
+          </Text>
+
+          <Text
+            fontSize={{ base: "16px", xl: "18px" }}
+            color='gray.500'
+            pb={{ base: "20px", xl: "40px" }}
+            lineHeight={{ xl: "25px", "2xl": "30px" }}
+            display={{ base: "block", xl: "none" }}
+          >
+            Diversified exposure to Curve and Convex through the purchase of a single index token.
           </Text>
 
           <Flex

@@ -20,7 +20,7 @@ import telegram from "../assets/telegram.png";
 
 const Navbar = () => {
   return (
-    <Container h='77px' maxW={{ base: "sm", xl: "6xl" }}>
+    <Container h='77px' maxW={{ base: "90%s", xl: "6xl" }}>
       <Flex w='full' h='full'>
         <HStack w={{ base: "50%", xl: "26%" }}>
           <Text fontSize='3xl' fontFamily='Aeonik Bold'>

@@ -17,35 +17,42 @@ const Tokenomics = () => {
       >
         <HStack
           bg='white'
-          // w={{ base: "300px", xl: "initial" }}
-          p={{ base: "7px", xl: "32px" }}
+          p={{ base: "9px", xl: "32px" }}
           borderRadius={{ base: "10px", xl: "20px" }}
-          flexWrap='wrap'
         >
           <Image src={icon1} w={{ base: "20px", xl: "40px" }} />
-          <Text fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }}>
-            Earn
-          </Text>
-          <Text fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }} color='green'>
-            CXD
+          <Text as='span' fontFamily='Aeonik Bold' fontSize={{ base: "14px", xl: "28px" }}>
+            Earn {""}
+            <Text
+              as='span'
+              fontFamily='Aeonik Bold'
+              fontSize={{ base: "14px", xl: "28px" }}
+              color='green'
+            >
+              CXD
+            </Text>
           </Text>
         </HStack>
 
         <VStack h='full' justify='space-between'>
-          <HStack spacing='15px'>
+          <HStack spacing={{ base: "5px", xl: "15px" }}>
             <Image src={triplearrow} w={{ base: "20px", xl: "40px" }} />
             <HStack
               bg='white'
-              p={{ base: "7px", xl: "32px" }}
-              flexWrap='wrap'
+              p={{ base: "9px", xl: "32px" }}
               borderRadius={{ base: "10px", xl: "20px" }}
             >
               <Image src={icon2} w={{ base: "20px", xl: "40px" }} />
-              <Text fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }}>
-                Stake
-              </Text>
-              <Text id='text' fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }}>
-                idxCVX
+              <Text as='span' fontFamily='Aeonik Bold' fontSize={{ base: "14px", xl: "28px" }}>
+                Stake{" "}
+                <Text
+                  as='span'
+                  id='text'
+                  fontFamily='Aeonik Bold'
+                  fontSize={{ base: "14px", xl: "28px" }}
+                >
+                  idxCVX
+                </Text>
               </Text>
             </HStack>
             <Image src={triplearrow} w={{ base: "20px", xl: "40px" }} />
@@ -55,20 +62,24 @@ const Tokenomics = () => {
             Tokenomics
           </Text>
 
-          <HStack spacing='15px'>
+          <HStack spacing={{ base: "10px", xl: "15px" }}>
             <Image src={triplearrow} w={{ base: "20px", xl: "40px" }} transform='rotate(180deg)' />
             <HStack
               bg='white'
-              p={{ base: "7px", xl: "32px" }}
-              flexWrap='wrap'
+              p={{ base: "9px", xl: "32px" }}
               borderRadius={{ base: "10px", xl: "20px" }}
             >
               <Image src={icon1} w={{ base: "20px", xl: "40px" }} />
-              <Text fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }}>
-                Lock
-              </Text>
-              <Text fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }} color='green'>
-                CXD
+              <Text as='span' fontFamily='Aeonik Bold' fontSize={{ base: "14px", xl: "28px" }}>
+                Lock{" "}
+                <Text
+                  as='span'
+                  fontFamily='Aeonik Bold'
+                  fontSize={{ base: "14px", xl: "28px" }}
+                  color='green'
+                >
+                  CXD
+                </Text>
               </Text>
             </HStack>
             <Image src={triplearrow} w={{ base: "20px", xl: "40px" }} transform='rotate(180deg)' />
@@ -78,15 +89,19 @@ const Tokenomics = () => {
         <HStack
           bg='white'
           p={{ base: "7px", xl: "32px" }}
-          flexWrap='wrap'
           borderRadius={{ base: "10px", xl: "20px" }}
         >
           <Image src={icon2} w={{ base: "20px", xl: "40px" }} />
-          <Text fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }}>
-            Earn
-          </Text>
-          <Text id='text' fontFamily='Aeonik Bold' fontSize={{ base: "15px", xl: "28px" }}>
-            idxCVX
+          <Text as='span' fontFamily='Aeonik Bold' fontSize={{ base: "14px", xl: "28px" }}>
+            Earn{" "}
+            <Text
+              as='span'
+              id='text'
+              fontFamily='Aeonik Bold'
+              fontSize={{ base: "14px", xl: "28px" }}
+            >
+              idxCVX
+            </Text>
           </Text>
         </HStack>
       </HStack>

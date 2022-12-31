@@ -13,7 +13,7 @@ import Trade from "./Trade";
 
 const App = () => {
   return (
-    <Box bg='#EFEFEF'>
+    <Box bg='#EFEFEF' overflowX='hidden'>
       <Navbar />
       <Herosection />
       <Protocol />

@@ -20,7 +20,7 @@ const Convex = () => {
         w='full'
       >
         <VStack
-          align='flex-start'
+          align={{ base: "center", xl: "flex-start" }}
           w={{ base: "full", xl: "45%" }}
           pt={{ base: "45px", xl: "50px" }}
           lineHeight={{ base: "25px", xl: "44px" }}
