@@ -115,7 +115,7 @@ const Footer = () => {
           >
             <HStack w={{ base: "full", xl: "50%" }} align='flex-start'>
               <Text fontFamily='Aeonik Regular ' fontSize='16px' color='#A0A6B5'>
-                Cortex 2022 All Rights reserved.
+                &copy; Cortex 2022 All Rights reserved.
               </Text>
             </HStack>
 

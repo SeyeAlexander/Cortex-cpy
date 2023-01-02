@@ -15,7 +15,7 @@ const Earn = () => {
         <VStack
           align='flex-start'
           bg='white'
-          w={{ base: "250px", xl: "33%" }}
+          w={{ base: "210px", xl: "33%" }}
           borderRadius={{ base: "10px", xl: "20px" }}
           p={{ base: "15px", xl: "30px" }}
           ml={{ base: "55px", xl: "0" }}
@@ -99,7 +99,7 @@ const Earn = () => {
               colorScheme='green'
               w='full'
               borderRadius={{ base: "10px", xl: "20px" }}
-              h={{ base: "30px", xl: "55px" }}
+              h={{ base: "40px", xl: "55px" }}
               fontSize={{ base: "18px", xl: "21px" }}
               fontWeight='normal'
             >

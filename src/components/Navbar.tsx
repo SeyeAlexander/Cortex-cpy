@@ -17,12 +17,13 @@ import discord from "../assets/discord.png";
 import medium from "../assets/medium.png";
 import twitter from "../assets/twitter.png";
 import telegram from "../assets/telegram.png";
+import Linkstack from "./Linkstack";
 
 const Navbar = () => {
   return (
-    <Container h='77px' maxW={{ base: "90%s", xl: "6xl" }}>
+    <Container h='77px' maxW={{ base: "90%", xl: "6xl" }}>
       <Flex w='full' h='full'>
-        <HStack w={{ base: "50%", xl: "26%" }}>
+        <HStack w={{ base: "full", xl: "26%" }}>
           <Text fontSize='3xl' fontFamily='Aeonik Bold'>
             CORTEX
           </Text>
@@ -97,6 +98,8 @@ const Navbar = () => {
             Launch App
           </Button>
         </HStack>
+
+        <Linkstack />
       </Flex>
     </Container>
   );
